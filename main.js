@@ -18,7 +18,7 @@ function getCurrentTime() {
   formattedMinutes = minutes >= 10 ? minutes : "0" + minutes;
   formattedSeconds = seconds >= 10 ? seconds : "0" + seconds;
   setInterval(getCurrentTime, 1000);
-  let time = `${formattedHours}:${formattedMinutes}:${formattedSeconds} : ${period}`;
+  let time = `${formattedHours}:${formattedMinutes}:${formattedSeconds}  ${period}`;
   let clock = document.getElementById("clock");
   clock.innerText = time;
 }
